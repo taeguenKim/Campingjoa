@@ -8,12 +8,17 @@
     android:orientation="vertical">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="캠핑\n    조아"
-        android:fontFamily="@font/font01"
-        android:textSize="80sp"/>
+        android:text="지도위치에요"
+        android:textSize="32sp"
+        android:gravity="center"/>
+
+
+    <RelativeLayout
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
 
 
 </LinearLayout>
