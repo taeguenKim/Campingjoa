@@ -1,18 +1,181 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout
+    android:id="@+id/drawerLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:background="@drawable/read11">
+
+
+    <ImageView
+
+        android:background="#012858"
+        android:id="@+id/iv_02"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="35dp"
+        android:layout_marginBottom="56dp"
+        android:src="@drawable/people"
+        android:background="@drawable/roundedbutton"
+        android:onClick="menu_01" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/imageView1"
+        android:layout_toLeftOf="@+id/imageView1"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="-28dp"
+        android:background="@drawable/roundedbutton2"
+        android:onClick="menu_01"
+        android:padding="8dp"
+        android:src="@drawable/menu_favorite" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/imageView2"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="-28dp"
+        android:background="@drawable/roundedbutton3"
+        android:onClick="menu_01"
+        android:padding="8dp"
+        android:src="@drawable/menu_event" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="116dp"
+        android:layout_height="105dp"
+        android:layout_above="@+id/imageView2"
+        android:layout_marginRight="-8dp"
+        android:layout_marginBottom="78dp"
+        android:layout_toLeftOf="@+id/imageView2"
+        android:background="@drawable/roundedbutton6"
+        android:onClick="menu_01"
+        android:padding="8dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_above="@+id/imageView1"
+        android:layout_toLeftOf="@+id/imageView3"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="-28dp"
+        android:background="@drawable/roundedbutton4"
+        android:onClick="menu_01"
+        android:padding="8dp"
+        android:src="@drawable/ic_menu_black_24dp" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentLeft="true"
+        android:padding="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="35dp"
+        android:layout_marginBottom="56dp"
+        android:src="@drawable/menu_board"
+        android:background="@drawable/roundedbutton5"
+        android:onClick="menu_01" />
 
     <TextView
+        android:id="@+id/tv_01"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="33dp"
+        android:layout_marginBottom="39dp"
+        android:fontFamily="@font/font02"
+        android:text="후기작성"
+        android:textColor="#FF000000" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/tv_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_01"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="111dp"
+        android:layout_marginBottom="55dp"
+        android:layout_toRightOf="@+id/tv_01"
+        android:fontFamily="@font/font02"
+        android:text="게시판"
+        android:textColor="#FF000000" />
+
+    <TextView
+        android:id="@+id/tv_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_01"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="187dp"
+        android:layout_marginBottom="73dp"
+        android:layout_toRightOf="@+id/tv_01"
+        android:fontFamily="@font/font02"
+        android:text="이벤트"
+        android:textColor="#FF000000" />
+
+    <TextView
+        android:id="@+id/tv_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_01"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="255dp"
+        android:layout_marginBottom="56dp"
+        android:layout_toRightOf="@+id/tv_01"
+        android:fontFamily="@font/font02"
+        android:text="인기지역"
+        android:textColor="#FF000000" />
+
+    <TextView
+        android:id="@+id/tv_4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_01"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="330dp"
+        android:layout_marginBottom="39dp"
+        android:layout_toRightOf="@+id/tv_01"
+        android:fontFamily="@font/font02"
+        android:text="나의정보"
+        android:textColor="#FF000000" />
+
+    <TextView
+        android:id="@+id/tv_5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_01"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="167dp"
+        android:layout_marginBottom="168dp"
+        android:layout_toRightOf="@+id/tv_01"
+        android:fontFamily="@font/font02"
+        android:text="캠핑가기"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp" />
+
+
+</RelativeLayout>
