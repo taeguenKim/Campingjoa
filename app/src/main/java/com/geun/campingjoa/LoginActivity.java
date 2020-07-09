@@ -5,9 +5,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.ViewGroup;
 
-import net.daum.mf.map.api.MapView;
+import com.kakao.auth.AuthType;
+import com.kakao.auth.Session;
 
 
 public class LoginActivity extends AppCompatActivity {
@@ -17,16 +17,10 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        MapView mapView = new MapView(this);
-        ViewGroup mapViewContainer = findViewById(R.id.map_view);
-        mapViewContainer.addView(mapView);
+        Session session = Session.getCurrentSession();
+        session.addCallback(new SessionCallback());
+        session.open(AuthType.KAKAO_LOGIN_ALL, this);
+
     }
 
-    @Override
-    public void onBackPressed() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
-        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
-        super.onBackPressed();
-    }
 }

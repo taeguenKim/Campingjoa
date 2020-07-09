@@ -17,6 +17,8 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
+import com.kakao.usermgmt.UserManagement;
+import com.kakao.usermgmt.callback.LogoutResponseCallback;
 
 import net.daum.mf.map.api.MapView;
 
@@ -43,9 +45,31 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void menu_01(View view) {
-        Intent intent = new Intent(this, LoginActivity.class);
+
+        Intent intent = new Intent(this, CampingActivity.class);
         startActivity(intent);
         overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+
     }
 
+    public void login_01(View view) {
+
+        UserManagement.requestLogout(new LogoutResponseCallback() {
+
+            @Override
+
+            public void onCompleteLogout() {
+
+                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+
+                startActivity(intent);
+
+            }
+
+        });
+
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+
+
+    }
 }

@@ -1,24 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity"
-    android:orientation="vertical">
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/loginimg_01"
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:src="@drawable/roundedbutton8"/>
 
     <TextView
+        android:id="@+id/logintv_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/font01"
+        android:text="캠핑\n   조아"
+        android:textSize="60sp"
+        android:textColor="#FFFFFFFF"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/logintv_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/font01"
+        android:text="캠핑세계로 오신걸"
+        android:layout_below="@+id/logintv_01"
+        android:layout_centerInParent="true"
+        android:textColor="#FFFFFFFF"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/logintv_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:fontFamily="@font/font01"
+        android:text="환영해요!!"
+        android:layout_below="@+id/logintv_02"
+        android:layout_centerInParent="true"
+        android:textColor="#FFFFFFFF"
+        android:textSize="60sp" />
+
+    <ImageView
+        android:id="@+id/loginiv_01"
+        android:layout_width="160dp"
+        android:layout_height="160dp"
+        android:layout_below="@+id/logintv_02"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="67dp"
+
+        android:src="@drawable/login"/>
+
+    <com.kakao.usermgmt.LoginButton
+        android:padding="8dp"
+        android:id="@+id/btn_kakao_login"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="지도위치에요"
-        android:textSize="32sp"
-        android:gravity="center"/>
+        android:layout_below="@+id/loginiv_01"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="8dp"/>
 
 
-    <RelativeLayout
-        android:id="@+id/map_view"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
-
-
-</LinearLayout>
+</RelativeLayout>
