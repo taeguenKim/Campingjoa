@@ -2,38 +2,25 @@ package com.geun.campingjoa;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
-import android.content.pm.PackageInfo;
-import android.content.pm.PackageManager;
-import android.content.pm.Signature;
-import android.graphics.drawable.GradientDrawable;
-import android.nfc.Tag;
 import android.os.Bundle;
-import android.util.Base64;
-import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
-import com.kakao.usermgmt.UserManagement;
-import com.kakao.usermgmt.callback.LogoutResponseCallback;
-
-import net.daum.mf.map.api.MapView;
-
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-
-import static com.kakao.util.maps.helper.Utility.getPackageInfo;
 
 
 public class MainActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
 
         ImageView iv01 = (ImageView) findViewById(R.id.iv_02);
         Glide.with(this).load(R.raw.main_05).into(iv01);
@@ -52,24 +39,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void login_01(View view) {
+    public void menu_myinfo(View view) {
 
-        UserManagement.requestLogout(new LogoutResponseCallback() {
+            Intent intent=new Intent(this, MyinfoActivity.class);
+            startActivity(intent);
 
-            @Override
+            overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+        }
 
-            public void onCompleteLogout() {
-
-                Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-
-                startActivity(intent);
-
-            }
-
-        });
-
-        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
-
-
-    }
 }
+

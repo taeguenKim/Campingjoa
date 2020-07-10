@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFFFF">
+
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        android:layout_margin="8dp"/>
+
+    <TextView
+        android:id="@+id/mymy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF03A9F4"
+        android:fontFamily="@font/font02"
+        android:gravity="center"
+        android:text="나의 정보"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/ivProfile"
+        android:layout_below="@+id/mymy"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/roundedbutton"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#FF03A9F4"
+        android:layout_below="@+id/ivProfile"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="10dp">
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:text="닉네임 : "
+        android:textColor="#FFFFFFFF"
+        android:fontFamily="@font/font01"
+        android:layout_below="@+id/ivProfile"
+        android:layout_toStartOf="@+id/ivProfile"
+        android:layout_marginTop="32dp"
+        />
+
+    <TextView
+        android:id="@+id/tvNickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:textSize="28sp"
+        android:textColor="#FF000000"
+        android:text="홍길동"
+        android:fontFamily="@font/font01"
+        android:layout_toEndOf="@+id/textView"
+        android:layout_below="@id/ivProfile"
+        android:layout_marginTop="35dp"/>
+
+
+
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="로그아웃"
+        android:textColor="#FFFFFFFF"
+        android:background="@drawable/roundedbutton3"
+        android:layout_below="@id/textView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="80dp"
+        android:onClick="menu_logout"
+        android:fontFamily="@font/font01"
+        android:textSize="24sp"
+        />
+
+
+    <Button
+        android:id="@+id/btnSignout"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FF03A9F4"
+        android:textColor="#FFFFFFFF"
+        android:fontFamily="@font/font01"
+        android:textSize="24dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:onClick="menu_out"
+        android:text="회원 탈퇴...ㅠㅠ" />
+
+</RelativeLayout>

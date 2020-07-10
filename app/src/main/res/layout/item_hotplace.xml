@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#7ED2F8"
+    android:padding="8dp">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#FFFFFFFF"
+        android:orientation="horizontal">
+
+
+
+        <ImageView
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:id="@+id/hotplace_iv"
+            android:src="#b91c1c"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:background="#FFFFFFFF"
+            android:padding="16dp"
+            >
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="위치 : "
+                android:textSize="20dp"
+                android:id="@+id/place"
+                android:textColor="#FF000000"
+                android:fontFamily="@font/font02"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/place"
+                android:text="Large Text"
+                android:textSize="20dp"
+                android:textColor="#FF000000"
+                android:fontFamily="@font/font01"
+                android:id="@+id/sub_place"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="소개 : "
+                android:textSize="20dp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/place"
+                android:textColor="#FF000000"
+                android:fontFamily="@font/font02"
+                android:id="@+id/show"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="안녕하세요 여기는 가나다라마바사 아자차카 타파하 에이비시디이에프쥐 에랄아뉴ㅜㅇ넝ㅇㅇ  "
+                android:textSize="18sp"
+                android:layout_marginTop="16dp"
+                android:layout_below="@+id/place"
+                android:layout_toEndOf="@+id/show"
+                android:textColor="#FF000000"
+                android:fontFamily="@font/font01"
+                android:id="@+id/sub_show"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="가격 : "
+                android:textSize="20dp"
+                android:layout_below="@+id/show"
+                android:layout_marginTop="52dp"
+                android:textColor="#FF000000"
+                android:fontFamily="@font/font02"
+                android:id="@+id/money"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:layout_toEndOf="@id/money"
+                android:layout_below="@+id/show"
+                android:layout_marginTop="52dp"
+                android:textSize="24dp"
+                android:textColor="#FF000000"
+                android:fontFamily="@font/font01"
+                android:id="@+id/sub_money"/>
+
+
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

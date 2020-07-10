@@ -28,7 +28,7 @@
         android:layout_marginBottom="56dp"
         android:src="@drawable/people"
         android:background="@drawable/roundedbutton"
-        android:onClick="menu_01" />
+        android:onClick="menu_myinfo" />
 
     <ImageView
         android:id="@+id/imageView2"
@@ -145,7 +145,7 @@
         android:layout_marginBottom="56dp"
         android:layout_toRightOf="@+id/tv_01"
         android:fontFamily="@font/font02"
-        android:text="인기지역"
+        android:text="추천지역"
         android:textColor="#FF000000" />
 
     <TextView
@@ -177,18 +177,9 @@
         android:textColor="#FFFFFFFF"
         android:textSize="24sp" />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="#FFFFFFFF"
-        android:text="로그아웃"
-        android:textSize="10sp"
-        android:textColor="#FF000000"
-        android:textStyle="bold"
-        android:layout_centerHorizontal="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginBottom="15dp"
-        android:onClick="login_01"/>
+
+
+
 
 
 </RelativeLayout>
