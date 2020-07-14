@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.GridView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -29,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
         Glide.with(this).load(R.raw.camping).into(iv02);
 
 
+
+
     }
 
     public void menu_01(View view) {
@@ -47,5 +50,15 @@ public class MainActivity extends AppCompatActivity {
             overridePendingTransition(R.anim.fadein, R.anim.fadeout);
         }
 
+    public void menu_02(View view) {
+        Intent intent=new Intent(this, HotplaceActivity.class);
+        startActivity(intent);
+
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+
+    }
+
+    public void menu_event(View view) {
+    }
 }
 

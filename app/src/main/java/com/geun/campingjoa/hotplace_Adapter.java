@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,22 +16,29 @@ import org.w3c.dom.Text;
 import java.util.ArrayList;
 
 public class hotplace_Adapter extends BaseAdapter {
-
-    ArrayList<item_hotplace> items=new ArrayList<item_hotplace>();
     Context context;
+    int layout;
+    ArrayList<item_hotplace> al;
+    LayoutInflater inf;
 
-    public void addItem(item_hotplace item){
-        items.add(item);
+
+    public hotplace_Adapter(Context context,int Layout,ArrayList<item_hotplace> data) {
+        this.context = context;
+        this.layout = Layout;
+        this.al = data;
+        inf = (LayoutInflater)context.getSystemService
+                (Context.LAYOUT_INFLATER_SERVICE);
     }
+
 
     @Override
     public int getCount() {
-        return items.size();
+        return al.size();
     }
 
     @Override
     public Object getItem(int position) {
-        return items.get(position);
+        return al.get(position);
     }
 
     @Override
@@ -40,21 +48,31 @@ public class hotplace_Adapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        context=parent.getContext();
-        item_hotplace listItem=items.get(position);
         if (convertView==null){
-            LayoutInflater inflater=(LayoutInflater)context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
-            convertView=inflater.inflate(R.layout.item_hotplace,parent,false);
+            convertView=inf.inflate(layout,null);
         }
 
-        ImageView hotplaceiv=convertView.findViewById(R.id.hotplace_iv);
-        TextView place=convertView.findViewById(R.id.sub_place);
-        TextView show=convertView.findViewById(R.id.sub_show);
-        TextView money=convertView.findViewById(R.id.sub_money);
+        ImageView profile =(ImageView) convertView.findViewById(R.id.hotplace_iv);
+        TextView title=(TextView)convertView.findViewById(R.id.sub_title);
+        TextView place=(TextView)convertView.findViewById(R.id.sub_place);
+        TextView show=(TextView)convertView.findViewById(R.id.sub_show);
+        TextView money=(TextView)convertView.findViewById(R.id.sub_money);
+        TextView people=(TextView)convertView.findViewById(R.id.people);
 
 
-        Glide.with(context).load(hotplaceiv).into();
+        final item_hotplace m=al.get(position);
 
-        return null;
+        profile.setImageResource(m.profile);
+        title.setText(m.title);
+        place.setText(m.place);
+        show.setText(m.show);
+        money.setText(m.money);
+        people.setText(m.people);
+
+
+
+
+        return convertView;
+
     }
 }

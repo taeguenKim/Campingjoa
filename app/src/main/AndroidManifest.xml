@@ -15,7 +15,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".HotplaceActivity"></activity>
+        <activity android:name=".CampdetailActivity"></activity>
+        <activity android:name=".HotplaceActivity" />
         <activity android:name=".MyinfoActivity" />
 
         <meta-data

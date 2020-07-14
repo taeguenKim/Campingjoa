@@ -6,6 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".HotplaceActivity">
 
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        android:layout_margin="8dp"/>
+
     <TextView
         android:id="@+id/mymy"
         android:layout_width="match_parent"
@@ -18,13 +26,12 @@
         android:textSize="24sp" />
 
 
-    <GridView
+    <ListView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/mymy"
-        android:id="@+id/gridview"
+        android:id="@+id/listview"
         android:horizontalSpacing="10dp"
-        android:verticalSpacing="10dp"
-        android:numColumns="2"/>
+        android:verticalSpacing="10dp" />
 
 </RelativeLayout>

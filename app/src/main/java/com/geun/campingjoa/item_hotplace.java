@@ -1,51 +1,35 @@
 package com.geun.campingjoa;
 
+import android.graphics.drawable.Drawable;
+
 public class item_hotplace {
 
-    public String profile;
-    public String place;
-    public String show;
-    public String money;
+    public int profile;
+    public String place="";
+    public String show="";
+    public String money="";
+    public String people="";
+    public String title="";
+    public String url="";
 
-    public String getProfile() {
-        return profile;
-    }
-
-    public void setProfile(String profile) {
-        this.profile = profile;
-    }
-
-    public String getPlace() {
-        return place;
-    }
-
-    public void setPlace(String place) {
-        this.place = place;
-    }
-
-    public String getShow() {
-        return show;
-    }
-
-    public void setShow(String show) {
-        this.show = show;
-    }
-
-    public String getMoney() {
-        return money;
-    }
-
-    public void setMoney(String money) {
-        this.money = money;
-    }
-
-    public item_hotplace(String profile, String place, String show, String money) {
+    public item_hotplace(int profile, String place, String show, String money, String people, String title, String url) {
         this.profile = profile;
         this.place = place;
         this.show = show;
         this.money = money;
+        this.people = people;
+        this.title = title;
+        this.url = url;
     }
 
+    public String getUrl() {
+        return url;
+    }
 
+    public void setUrl(String url) {
+        this.url = url;
+    }
 
+    public item_hotplace() {
+    }
 }

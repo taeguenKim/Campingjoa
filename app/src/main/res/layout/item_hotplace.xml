@@ -9,26 +9,49 @@
     <LinearLayout
 
         android:layout_width="match_parent"
-        android:layout_height="180dp"
+        android:layout_height="240dp"
         android:background="#FFFFFFFF"
         android:orientation="horizontal">
 
 
 
         <ImageView
-            android:layout_width="140dp"
-            android:layout_height="match_parent"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
             android:id="@+id/hotplace_iv"
-            android:src="#b91c1c"/>
+            android:src="#b91c1c"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"/>
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginLeft="10dp"
             android:background="#FFFFFFFF"
-            android:padding="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:paddingRight="4dp"
             >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="이름 : "
+                android:textSize="22dp"
+                android:id="@+id/title"
+                android:textColor="#FF000000"
+                android:fontFamily="@font/font02"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/place"
+                android:text="Large Text"
+                android:textSize="28dp"
+                android:textColor="#FF000000"
+                android:layout_marginTop="2dp"
+                android:fontFamily="@font/font01"
+                android:id="@+id/sub_title"/>
 
 
 
@@ -38,8 +61,10 @@
                 android:text="위치 : "
                 android:textSize="20dp"
                 android:id="@+id/place"
+                android:layout_below="@+id/title"
                 android:textColor="#FF000000"
-                android:fontFamily="@font/font02"/>
+                android:fontFamily="@font/font02"
+                android:layout_marginTop="4dp"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -47,7 +72,9 @@
                 android:layout_toEndOf="@+id/place"
                 android:text="Large Text"
                 android:textSize="20dp"
+                android:layout_below="@+id/title"
                 android:textColor="#FF000000"
+                android:layout_marginTop="4dp"
                 android:fontFamily="@font/font01"
                 android:id="@+id/sub_place"/>
 
@@ -57,7 +84,7 @@
                 android:layout_height="wrap_content"
                 android:text="소개 : "
                 android:textSize="20dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="4dp"
                 android:layout_below="@+id/place"
                 android:textColor="#FF000000"
                 android:fontFamily="@font/font02"
@@ -69,7 +96,7 @@
                 android:layout_height="wrap_content"
                 android:text="안녕하세요 여기는 가나다라마바사 아자차카 타파하 에이비시디이에프쥐 에랄아뉴ㅜㅇ넝ㅇㅇ  "
                 android:textSize="18sp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="4dp"
                 android:layout_below="@+id/place"
                 android:layout_toEndOf="@+id/show"
                 android:textColor="#FF000000"
@@ -83,7 +110,7 @@
                 android:text="가격 : "
                 android:textSize="20dp"
                 android:layout_below="@+id/show"
-                android:layout_marginTop="52dp"
+                android:layout_marginTop="64dp"
                 android:textColor="#FF000000"
                 android:fontFamily="@font/font02"
                 android:id="@+id/money"/>
@@ -95,12 +122,35 @@
                 android:text="Medium Text"
                 android:layout_toEndOf="@id/money"
                 android:layout_below="@+id/show"
-                android:layout_marginTop="52dp"
+                android:layout_marginTop="64dp"
                 android:textSize="24dp"
                 android:textColor="#FF000000"
                 android:fontFamily="@font/font01"
                 android:id="@+id/sub_money"/>
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="인원수 : "
+                android:textSize="12sp"
+                android:layout_below="@+id/money"
+                android:layout_marginTop="8dp"
+                android:textColor="#FF000000"
+                android:fontFamily="@font/font02"
+                android:id="@+id/sub_people"/>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Medium Text"
+                android:layout_toEndOf="@id/money"
+                android:layout_below="@+id/money"
+                android:layout_marginTop="8dp"
+                android:textSize="18sp"
+                android:textColor="#FF000000"
+                android:fontFamily="@font/font01"
+                android:id="@+id/people"/>
 
 
         </RelativeLayout>
