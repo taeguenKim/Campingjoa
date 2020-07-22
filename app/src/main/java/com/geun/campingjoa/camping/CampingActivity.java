@@ -1,10 +1,13 @@
-package com.geun.campingjoa;
+package com.geun.campingjoa.camping;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.ViewGroup;
+
+import com.geun.campingjoa.R;
+import com.geun.campingjoa.main.MainActivity;
 
 import net.daum.mf.map.api.MapView;
 

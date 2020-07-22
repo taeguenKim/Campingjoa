@@ -1,15 +1,18 @@
-package com.geun.campingjoa;
+package com.geun.campingjoa.main;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.GridView;
 import android.widget.ImageView;
-import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
+import com.geun.campingjoa.board.Boardlist;
+import com.geun.campingjoa.camping.CampingActivity;
+import com.geun.campingjoa.info.MyinfoActivity;
+import com.geun.campingjoa.R;
+import com.geun.campingjoa.hotplace.HotplaceActivity;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -59,6 +62,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void menu_event(View view) {
+    }
+
+    public void menu_board(View view) {
+        Intent intent=new Intent(this, Boardlist.class);
+        startActivity(intent);
+
+        overridePendingTransition(R.anim.fadein, R.anim.fadeout);
+
     }
 }
 

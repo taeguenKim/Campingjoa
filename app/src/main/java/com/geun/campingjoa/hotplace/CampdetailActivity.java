@@ -1,9 +1,6 @@
-package com.geun.campingjoa;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.geun.campingjoa.hotplace;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -12,7 +9,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import org.w3c.dom.Text;
+import com.geun.campingjoa.R;
 
 public class CampdetailActivity extends Activity {
 
@@ -27,7 +24,7 @@ public class CampdetailActivity extends Activity {
         back.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(CampdetailActivity.this,HotplaceActivity.class);
+                Intent intent =new Intent(CampdetailActivity.this, HotplaceActivity.class);
                 intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP |Intent.FLAG_ACTIVITY_SINGLE_TOP);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fadein, R.anim.fadeout);

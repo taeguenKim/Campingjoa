@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "235644645561",
+    "firebase_url": "https://campingjoa-672ac.firebaseio.com",
+    "project_id": "campingjoa-672ac",
+    "storage_bucket": "campingjoa-672ac.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235644645561:android:7cda33e285044dc8926b68",
+        "android_client_info": {
+          "package_name": "com.geun.campingjoa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235644645561-kcab0bmccnj8dv0vj5t6cnbvr2ltv7te.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.geun.campingjoa",
+            "certificate_hash": "d888bb1ba635224dd74c8a2fa06ac659657a0c2f"
+          }
+        },
+        {
+          "client_id": "235644645561-041o4acjguab83r015mg4r4thtqu19k8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9uXgA-7MUnN64jYo2Dl2mFgrJi8HqajI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235644645561-041o4acjguab83r015mg4r4thtqu19k8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

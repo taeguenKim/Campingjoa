@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context=".main.MainActivity"
     android:background="@drawable/read11">
 
 
@@ -77,7 +77,7 @@
         android:layout_marginRight="30dp"
         android:layout_marginBottom="-28dp"
         android:background="@drawable/roundedbutton4"
-        android:onClick="menu_01"
+        android:onClick="menu_board"
         android:padding="8dp"
         android:src="@drawable/ic_menu_black_24dp" />
 

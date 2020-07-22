@@ -1,4 +1,4 @@
-package com.geun.campingjoa;
+package com.geun.campingjoa.hotplace;
 
 import android.graphics.drawable.Drawable;
 

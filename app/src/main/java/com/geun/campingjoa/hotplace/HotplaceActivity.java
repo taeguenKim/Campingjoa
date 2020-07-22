@@ -1,20 +1,16 @@
-package com.geun.campingjoa;
+package com.geun.campingjoa.hotplace;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.content.ContextCompat;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.BaseAdapter;
 import android.widget.Button;
-import android.widget.GridView;
 import android.widget.ListView;
 
-import com.bumptech.glide.Glide;
+import com.geun.campingjoa.main.MainActivity;
+import com.geun.campingjoa.R;
 
 import java.util.ArrayList;
 
@@ -32,7 +28,7 @@ public class HotplaceActivity extends AppCompatActivity {
         back.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(HotplaceActivity.this,MainActivity.class);
+                Intent intent =new Intent(HotplaceActivity.this, MainActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fadein, R.anim.fadeout);
             }
@@ -95,7 +91,7 @@ public class HotplaceActivity extends AppCompatActivity {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                Intent intent =new Intent(getApplicationContext(),CampdetailActivity.class);
+                Intent intent =new Intent(getApplicationContext(), CampdetailActivity.class);
 
 
                 intent.putExtra("profile",data.get(position).profile);

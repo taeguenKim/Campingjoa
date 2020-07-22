@@ -1,4 +1,4 @@
-package com.geun.campingjoa;
+package com.geun.campingjoa.info;
 
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
@@ -13,6 +13,10 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
+import com.geun.campingjoa.R;
+import com.geun.campingjoa.login.G;
+import com.geun.campingjoa.login.LoginActivity;
+import com.geun.campingjoa.main.MainActivity;
 import com.kakao.network.ApiErrorCode;
 import com.kakao.network.ErrorResult;
 import com.kakao.usermgmt.UserManagement;
@@ -43,7 +47,7 @@ public class MyinfoActivity extends AppCompatActivity {
         back.setOnClickListener(new Button.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent =new Intent(MyinfoActivity.this,MainActivity.class);
+                Intent intent =new Intent(MyinfoActivity.this, MainActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.fadein, R.anim.fadeout);
             }

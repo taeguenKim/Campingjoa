@@ -1,14 +1,14 @@
-package com.geun.campingjoa;
+package com.geun.campingjoa.login;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 
-import android.accounts.Account;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.Toast;
-
+import com.geun.campingjoa.main.MainActivity;
+import com.geun.campingjoa.R;
 import com.kakao.auth.ISessionCallback;
 import com.kakao.auth.Session;
 import com.kakao.network.ErrorResult;
@@ -22,6 +22,9 @@ import com.kakao.util.exception.KakaoException;
 
 
 public class LoginActivity extends AppCompatActivity {
+
+    long kakao=G.id;
+    String kakaoid=String.valueOf(kakao);
 
     private SessionCallback sessionCallback;
 
@@ -72,15 +75,16 @@ public class LoginActivity extends AppCompatActivity {
 
                 @Override
                 public void onSuccess(MeV2Response result) {
-
                     UserAccount userAccount =result.getKakaoAccount();
                     Profile profile=userAccount.getProfile();
+
                     G.nickname=profile.getNickname();
                     G.profile=profile.getProfileImageUrl();
-
+                    G.birthday= userAccount.getBirthday();
+                    G.id=result.getId();
                     Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-
                     startActivity(intent);
+
                     finish();
                 }
             });
@@ -93,4 +97,6 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "로그인 도중 오류가 발생했습니다. 인터넷 연결을 확인해주세요: "+e.toString(), Toast.LENGTH_SHORT).show();
         }
     }
+
+
 }

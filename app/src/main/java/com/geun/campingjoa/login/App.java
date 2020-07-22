@@ -1,4 +1,4 @@
-package com.geun.campingjoa;
+package com.geun.campingjoa.login;
 
 import android.app.Application;
 import android.content.Context;
