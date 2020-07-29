@@ -107,6 +107,7 @@
         android:textStyle="normal"
         android:layout_below="@+id/textView"
         android:fontFamily="@font/font02"
+        android:layout_marginTop="4dp"
         android:gravity="center"
         android:background="#B4D6F1"
         android:textColor="#FF000000"
