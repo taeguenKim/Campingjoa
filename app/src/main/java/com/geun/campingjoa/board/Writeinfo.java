@@ -1,17 +1,39 @@
 package com.geun.campingjoa.board;
 
 public class Writeinfo {
-    private String title;
-    private String contents;
-    private String publisher;
+    String nickname;
+    String IDcode;
+    String title;
+    String contents;
+    String photo;
+    String time;
 
     public Writeinfo() {
     }
 
-    public Writeinfo(String title, String contents, String publisher) {
+    public Writeinfo(String nickname, String IDcode, String title, String contents, String photo,String time) {
+        this.nickname = nickname;
+        this.IDcode = IDcode;
         this.title = title;
         this.contents = contents;
-        this.publisher = publisher;
+        this.photo = photo;
+        this.time = time;
+    }
+
+    public String getNickname() {
+        return nickname;
+    }
+
+    public void setNickname(String nickname) {
+        this.nickname = nickname;
+    }
+
+    public String getIDcode() {
+        return IDcode;
+    }
+
+    public void setIDcode(String IDcode) {
+        this.IDcode = IDcode;
     }
 
     public String getTitle() {
@@ -30,11 +52,22 @@ public class Writeinfo {
         this.contents = contents;
     }
 
-    public String getPublisher() {
-        return publisher;
+    public String getPhoto() {
+        return photo;
     }
 
-    public void setPublisher(String publisher) {
-        this.publisher = publisher;
+    public void setPhoto(String photo) {
+        this.photo = photo;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 }
+
+
+

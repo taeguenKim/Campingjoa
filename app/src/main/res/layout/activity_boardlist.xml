@@ -4,7 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#E1DDDD">
+    android:background="#FFFFFFFF">
 
     <Button
         android:id="@+id/back"
@@ -20,17 +20,20 @@
         android:background="#FF03A9F4"
         android:fontFamily="@font/font02"
         android:gravity="center"
-        android:text="게시판"
+        android:text="게시판 / 후기작성"
         android:textColor="#FFFFFFFF"
         android:textSize="24sp" />
 
 
-    <androidx.recyclerview.widget.RecyclerView
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:layout_below="@+id/mymy"
-        android:id="@+id/recycler_view" />
+        android:id="@+id/list_view"
+        android:orientation="vertical"
+        >
+
+    </ListView>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/write_button"
@@ -38,8 +41,8 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:backgroundTint="#FF03A9F4"
+        android:backgroundTint="#3E4042"
         android:src="@drawable/ic_edit"
-        android:layout_margin="8dp"/>
+        android:layout_margin="36dp"/>
 
 </RelativeLayout>

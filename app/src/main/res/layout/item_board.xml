@@ -5,39 +5,72 @@
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     app:cardCornerRadius="2dp"
-    app:cardElevation="2dp"
+    app:cardElevation="8dp"
     app:cardMaxElevation="2dp"
-    app:cardPreventCornerOverlap="true"
+    app:cardPreventCornerOverlap="false"
     app:cardUseCompatPadding="true"
     android:layout_margin="8dp"
+    android:backgroundTint="#FFFFFFFF"
+
     >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:background="@drawable/roundedbutton3"
+        android:orientation="vertical"
+        android:padding="8dp">
 
         <TextView
             android:id="@+id/item_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="반갑습니다 여러분"
-            android:textStyle="bold"
+            android:fontFamily="@font/font02"
             android:layout_margin="8dp"
-            android:textColor="#FF000000"
+            android:textColor="#FFFFFFFF"
             android:textSize="24sp"
             tools:ignore="HardcodedText" />
 
-        <TextView
-            android:layout_margin="8dp"
-            android:id="@+id/item_name_text"
+        <RelativeLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Name"
-            android:drawableStart="@drawable/ic_person"
-            android:gravity="center"
-            android:textSize="12sp"
-            tools:ignore="HardcodedText" />
+            android:layout_height="wrap_content">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_person"
+                />
+
+            <TextView
+                android:layout_margin="8dp"
+                android:id="@+id/item_name_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/iv"
+                android:padding="4dp"
+                android:text="홍길동"
+                android:textColor="#FF000000"
+                android:fontFamily="@font/font04"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/item_time_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020.07.20"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="28dp"
+                android:fontFamily="@font/font02"
+                android:textColor="#FF000000"
+                android:layout_marginRight="8dp"/>
+
+        </RelativeLayout>
+
+
 
 
     </LinearLayout>

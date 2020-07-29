@@ -102,6 +102,7 @@ public class HotplaceActivity extends AppCompatActivity {
                 intent.putExtra("people",data.get(position).people);
                 intent.putExtra("url",data.get(position).url);
                 startActivity(intent);
+                overridePendingTransition(R.anim.fadein, R.anim.fadeout);
             }
         });
 

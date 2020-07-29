@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".board.BoardActivity">
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:background="@drawable/ic_arrow_back_black_24dp"
+        android:layout_margin="8dp"/>
+
+
+    <TextView
+        android:id="@+id/mymy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FF03A9F4"
+        android:fontFamily="@font/font02"
+        android:gravity="center"
+        android:text="상세보기"
+        android:textColor="#FFFFFFFF"
+        android:textSize="24sp" />
+
+
+
+    <TextView
+        android:id="@+id/ddd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="올리신 제목"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_below="@+id/mymy"
+        android:fontFamily="@font/font02"
+        android:gravity="center"
+        android:background="#B4D6F1"
+        android:textColor="#FF000000"
+        />
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Title"
+        android:layout_below="@+id/ddd"
+        android:textSize="30sp"
+        android:fontFamily="@font/font04"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF000000"/>
+
+    <TextView
+        android:id="@+id/ccc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="올려주신 분"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_below="@+id/textView1"
+        android:fontFamily="@font/font02"
+        android:gravity="center"
+        android:background="#B4D6F1"
+        android:textColor="#FF000000"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/textView1"
+        android:text="글쓴이 : "
+        android:textSize="16sp"
+        android:fontFamily="@font/font04"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF000000"/>
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/textView2"
+        android:text="Title"
+        android:textSize="16sp"
+        android:fontFamily="@font/font04"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF000000"/>
+
+    <TextView
+        android:id="@+id/bbb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="올려주신 날짜"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_below="@+id/textView"
+        android:fontFamily="@font/font02"
+        android:gravity="center"
+        android:background="#B4D6F1"
+        android:textColor="#FF000000"
+        />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:layout_below="@+id/bbb"
+        android:text="2020.20.20"
+        android:textSize="16sp"
+        android:fontFamily="@font/font04"
+        android:textColor="#FF000000"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <TextView
+        android:id="@+id/aaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="올려주신 후기"
+        android:textSize="16sp"
+        android:textStyle="normal"
+        android:layout_below="@+id/textView3"
+        android:fontFamily="@font/font02"
+        android:gravity="center"
+        android:background="#B4D6F1"
+        android:textColor="#FF000000"
+        android:layout_marginTop="8dp"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/aaa"
+        android:layout_above="@+id/btn01">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="16dp"
+                android:textStyle="bold"
+                android:text="스웨거는 무료로 배포되는 스웨거 폰트 사용에 대한 자발적인 지원과 기부를 받고 있습니다.
+여러분들의 소중한 기부금은 세브란스 병원 백혈병 환우 아이들의 치료비에 전액 지원됩니다. 감사합니다!!!!! "
+                android:textSize="16sp"
+                android:fontFamily="@font/font04"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/good"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="올려주신 이미지"
+                android:textSize="16sp"
+                android:textStyle="normal"
+                android:fontFamily="@font/font02"
+                android:gravity="center"
+                android:background="#B4D6F1"
+                android:textColor="#FF000000"
+                android:layout_marginTop="24dp"
+                />
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/camping01" />
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="칭찬하기"
+        android:layout_marginTop="12dp"
+        android:textColor="#FFFFFFFF"
+        android:textStyle="bold"
+        android:fontFamily="@font/font04"
+        android:background="@drawable/roundedbutton3"
+        android:layout_alignParentBottom="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="24dp"
+        android:onClick="haha"/>
+
+</RelativeLayout>

@@ -7,16 +7,12 @@
     android:layout_height="match_parent"
     tools:context=".main.MainActivity"
     android:background="@drawable/read11">
-
-
     <ImageView
-
         android:background="#012858"
         android:id="@+id/iv_02"
         android:layout_width="match_parent"
         android:layout_height="500dp"
         android:scaleType="fitXY"/>
-
     <ImageView
         android:id="@+id/imageView1"
         android:layout_width="45dp"
@@ -29,7 +25,6 @@
         android:src="@drawable/people"
         android:background="@drawable/roundedbutton"
         android:onClick="menu_myinfo" />
-
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="45dp"
@@ -42,7 +37,6 @@
         android:onClick="menu_02"
         android:padding="8dp"
         android:src="@drawable/menu_favorite" />
-
     <ImageView
         android:id="@+id/imageView3"
         android:layout_width="45dp"
@@ -55,7 +49,6 @@
         android:onClick="menu_event"
         android:padding="8dp"
         android:src="@drawable/menu_event" />
-
     <ImageView
         android:id="@+id/imageView6"
         android:layout_width="116dp"
@@ -65,9 +58,8 @@
         android:layout_marginBottom="78dp"
         android:layout_toLeftOf="@+id/imageView2"
         android:background="@drawable/roundedbutton6"
-        android:onClick="menu_01"
+        android:onClick="menu_02"
         android:padding="8dp" />
-
     <ImageView
         android:id="@+id/imageView4"
         android:layout_width="45dp"
@@ -80,7 +72,6 @@
         android:onClick="menu_board"
         android:padding="8dp"
         android:src="@drawable/ic_menu_black_24dp" />
-
     <ImageView
         android:id="@+id/imageView5"
         android:layout_width="45dp"
@@ -92,7 +83,7 @@
         android:layout_marginBottom="56dp"
         android:src="@drawable/menu_board"
         android:background="@drawable/roundedbutton5"
-        android:onClick="menu_01" />
+        android:onClick="menu_board" />
 
     <TextView
         android:id="@+id/tv_01"
